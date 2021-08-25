@@ -588,12 +588,24 @@ section {
   color: #012970;
 }
 
+.footer-bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 
 /*--------------------------------------------------------------
-# Services
+# Personal
 --------------------------------------------------------------*/
 
-.services .service-box {
+#personals {
+  padding-top: 15%;
+}
+
+
+.personal .personal-box {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   height: 100%;
   padding: 60px 30px;
@@ -602,7 +614,7 @@ section {
   border-radius: 5px;
 }
 
-.services .service-box .icon {
+.personal .personal-box .icon {
   font-size: 36px;
   padding: 40px 20px;
   border-radius: 4px;
@@ -613,12 +625,12 @@ section {
   transition: 0.3s;
 }
 
-.services .service-box h3 {
+.personal .personal-box h3 {
   color: #444444;
   font-weight: 700;
 }
 
-.services .service-box .read-more {
+.personal .personal-box .read-more {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -627,118 +639,195 @@ section {
   padding: 8px 20px;
 }
 
-.services .service-box .read-more i {
+.personal .personal-box .read-more i {
   line-height: 0;
   margin-left: 5px;
   font-size: 18px;
 }
 
-.services .service-box.blue {
+.personal .personal-box.blue {
   border-bottom: 3px solid #2db6fa;
 }
 
-.services .service-box.blue .icon {
+.personal .personal-box.blue .icon {
   color: #2db6fa;
   background: #dbf3fe;
 }
 
-.services .service-box.blue .read-more {
+.personal .personal-box.blue .read-more {
   color: #2db6fa;
 }
 
-.services .service-box.blue:hover {
+.personal .personal-box.blue:hover {
   background: #2db6fa;
 }
 
-.services .service-box.orange {
+.personal .personal-box.orange {
   border-bottom: 3px solid #f68c09;
 }
 
-.services .service-box.orange .icon {
+.personal .personal-box.orange .icon {
   color: #f68c09;
   background: #fde3c4;
 }
 
-.services .service-box.orange .read-more {
+.personal .personal-box.orange .read-more {
   color: #f68c09;
 }
 
-.services .service-box.orange:hover {
+.personal .personal-box.orange:hover {
   background: #f68c09;
 }
 
-.services .service-box.green {
+.personal .personal-box.green {
   border-bottom: 3px solid #08da4e;
 }
 
-.services .service-box.green .icon {
+.personal .personal-box.green .icon {
   color: #08da4e;
   background: #cffddf;
 }
 
-.services .service-box.green .read-more {
+.personal .personal-box.green .read-more {
   color: #08da4e;
 }
 
-.services .service-box.green:hover {
+.personal .personal-box.green:hover {
   background: #08da4e;
 }
 
-.services .service-box.red {
+.personal .personal-box.red {
   border-bottom: 3px solid #e9222c;
 }
 
-.services .service-box.red .icon {
+.personal .personal-box.red .icon {
   color: #e9222c;
   background: #fef7f8;
 }
 
-.services .service-box.red .read-more {
+.personal .personal-box.red .read-more {
   color: #e9222c;
 }
 
-.services .service-box.red:hover {
+.personal .personal-box.red:hover {
   background: #e9222c;
 }
 
-.services .service-box.purple {
+.personal .personal-box.purple {
   border-bottom: 3px solid #b50edf;
 }
 
-.services .service-box.purple .icon {
+.personal .personal-box.purple .icon {
   color: #b50edf;
   background: #f8e4fd;
 }
 
-.services .service-box.purple .read-more {
+.personal .personal-box.purple .read-more {
   color: #b50edf;
 }
 
-.services .service-box.purple:hover {
+.personal .personal-box.purple:hover {
   background: #b50edf;
 }
 
-.services .service-box.pink {
+.personal .personal-box.pink {
   border-bottom: 3px solid #f51f9c;
 }
 
-.services .service-box.pink .icon {
+.personal .personal-box.pink .icon {
   color: #f51f9c;
   background: #feecf7;
 }
 
-.services .service-box.pink .read-more {
+.personal .personal-box.pink .read-more {
   color: #f51f9c;
 }
 
-.services .service-box.pink:hover {
+.personal .personal-box.pink:hover {
   background: #f51f9c;
 }
 
-.services .service-box:hover h3, .services .service-box:hover p, .services .service-box:hover .read-more {
+.personal .personal-box:hover h3, .personal .personal-box:hover p, .personal .personal-box:hover .read-more {
   color: #fff;
 }
 
-.services .service-box:hover .icon {
+.personal .personal-box:hover .icon {
   background: #fff;
+}
+.form-floating input {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: none;
+}
+/*--------------------------------------------------------------
+# Personal - measure.html
+--------------------------------------------------------------*/
+#calculator {
+  height: 925px;
+}
+#calculator .container{
+  margin-top: 200px;
+}
+/*--------------------------------------------------------------
+# Personal - inform.html
+--------------------------------------------------------------*/
+#inform {
+  height: 1200px;
+}
+
+
+/*--------------------------------------------------------------
+# Profile
+--------------------------------------------------------------*/
+
+#profile-card {
+  width: 100%;
+  text-align: center;
+
+  border: 2px solid green;
+  border-radius: 4px;
+
+  padding-top: 2vh;
+}
+
+#achievements-card {
+  width: 100%;
+  text-align: left;
+  
+  border: 2px solid green;
+  border-radius: 4px;
+  
+  padding: 2vh 1vw 2vh 1vw;
+}
+
+#badge-list {
+  padding: 0px;
+  ;
+}
+
+#badge-list li{
+  list-style-type: none;
+}
+
+ul.horizontal,
+ul.horizontal li {
+    margin: 0;
+    padding: 0;
+}
+ul.horizontal {
+    list-style-type: none;
+    overflow: auto;
+    margin: 0 auto;
+}
+ul.horizontal li {
+    float: left;
+    width: 99px;
+    height: 99px;
+    margin: 0 1vw 1vh 1vw;
+    text-align: center;
+    color: white;
 }

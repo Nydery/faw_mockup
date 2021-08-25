@@ -287,3 +287,7 @@
   });
 
 })();
+
+function showModal(id) {
+  $(id).modal();
+}

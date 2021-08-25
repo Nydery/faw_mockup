@@ -778,8 +778,32 @@ section {
 #inform {
   height: 1200px;
 }
-
-
+/*--------------------------------------------------------------
+# Collective
+--------------------------------------------------------------*/
+#chat .container{
+  border: 1px solid grey;
+  border-radius: 3px;
+  height: 700px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#chat .messagebox {
+  height: 50px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.messagebox i {
+  font-size: 30px;
+  line-height: 50px;
+}
+.messagebox div p {
+  line-height: 50px;
+  margin-left: 20px;
+}
 /*--------------------------------------------------------------
 # Profile
 --------------------------------------------------------------*/

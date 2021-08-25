@@ -289,5 +289,9 @@
 })();
 
 function showModal(id) {
-  $(id).modal();
+  console.log('showModal called: ' + id);
+  var myModal = new bootstrap.Modal(document.getElementById(id), {
+    backdrop: false
+  });
+  myModal.show();
 }
